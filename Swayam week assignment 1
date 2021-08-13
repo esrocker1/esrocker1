@@ -7,27 +7,69 @@ def primeproduct(n):
     c=[]
     a=1
     if n==1 or n==2 :
-        print ("False")
+        return(False)
         exit()
     for i in range (2,n//2 +2):
         if (n%i==0):
             l= l+ [i]
-    print(l)
+    
     for x in l:
-        print (x)
+        
         b=[]
         for y in range (1,x+1):
             if x%y==0:
                 b= b+ [y]
-                print(b)
+                
         if b==[1,y]:
             c= c+[y]
-    print(c)
+    
     for z in c:
         a=a*z
     if a==n:
-        print("True")
-    elif a!=n:
-        print("False")
+        return(True)
+    else :
+        return(False)
+
+primeproduct(144)
+
+def shuffle(l1,l2):
+  c=[]
+  b=0
+  if len(l1)>len(l2):
+     b=len(l1)
+  else:
+     b=len(l2)
+     
+  for x in range(0,b):
+      if  x < len(l2) and x < len(l1):
         
-primeproduct(36)
+        
+        
+        c = c + [l1[x]] + [l2[x]]
+        
+      elif x >=len(l1) and x< len(l2):
+          
+          
+          c= c+ [l2[x]]
+      elif x>=len(l2) and x< len(l1):
+          
+                    
+          c= c+ [l1[x]]
+  return (c)
+  
+
+
+def delchar(a,b):
+    d=""
+    if len(b)!=1:
+       return(a)
+    else :
+     for x in a:
+      if x!=b:
+       d=d+x 
+        
+    return(d)
+
+
+
+
