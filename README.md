@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Eshan Srivastava
-- 👀 I’m interested in engineering ang cybersecurity.
+- 👀 I’m interested in engineering and cybersecurity.
 - 🌱 I’m currently learning both engineering and cybersecurity
 - 💞️ I’m looking to collaborate on any and everything  
 - 📫 How to reach me esrocker1@gmail.com
