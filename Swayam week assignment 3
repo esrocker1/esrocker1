@@ -1,0 +1,55 @@
+def expanding(l):
+    q=0
+    y=[]
+    for i in range(len(l)):
+        if i>0 :
+            if l[i] > l[i-1]:
+                y= y+ [l[i]-l[i-1]]
+            else:
+                y=y + [l[i-1]-l[i]]
+           
+    for x in range(1,len(y)):
+        if y[x-1]>=y[x]:
+            q=1
+    if q ==0 :
+        return(True)
+    else : 
+        return(False)
+
+def sumsquare(l):
+    x,y=0,0
+    if l==[]:
+        exit()
+    for i in range(len(l)):
+        if l[i]%2==0:
+            x=x+(l[i])*(l[i])
+        else:
+            y=y+(l[i])*(l[i])
+    return[y,x]
+def transpose(l):
+    y=[]
+    z=[]
+    x=0
+    
+    if len(l) < 1:
+        return(False)
+    if len(l) == 1:
+    
+        return(l)
+        
+        
+    
+    for i in range(len(l[0])):
+            
+        for x in range(len(l)):
+           
+           y = y +[l[x][i]]
+            
+        z=z+ [y]
+        y=[]
+    
+        
+        
+        
+        
+    return(z)
